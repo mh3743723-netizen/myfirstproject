@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>CSS Responsive Design</title>
+    <style>
+        .banner-section{
+            border: 2px solid;
+            background-color:skyblue;
+            padding: 20px;
+            text-align: center;border-radius: 20px;
+            display: flex;
+        }
+        .box{
+            border: 2px solid red;
+        }
+        @media screen and (max-width : 600px)
+        {
+         .banner-section{
+          background-color:rgb(255, 8, 0);
+          flex-direction: col;
+         }   
+        }
+    </style>
+</head>
+<body>
+    <section class="banner-section">
+        <div class="box">
+            <h1>left section</h1>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero rem quod rerum ex inventore nulla magni at ab obcaecati quia. Atque voluptas libero iste possimus dolorum ea totam id molestiae.</P>
+            <button>Click me</button>
+        </div>
+        <div class="box">
+            <h1>right setion</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dolores tempore repudiandae minima optio doloribus ad ducimus ipsum quisquam exercitationem nisi magni rerum voluptatem fugiat possimus nemo a neque assumendae</p>
+        
+        </div>
+    </section>
+</body>
+</html>
